@@ -1,0 +1,34 @@
+mkdir /scripts
+cd /scripts/
+nano criar_user.sh
+ls
+criar_user.sh
+chmod +x criar_user.sh
+./criar_user.sh
+
+
+
+
+
+
+
+
+#########EDITOR NANO MY EDIT#############################################################################################################################################
+#!/bin/bash
+
+echo"creating system users..."
+
+sudo useradd guest1 -c "convidado convidado" -s /bin/bash -m -p $(openssl passwd -crypt Senha123)
+passwd guest1 -e
+
+sudo useradd guest2 -c "convidado convidado" -s /bin/bash -m -p $(openssl passwd -crypt Senha123)
+passwd guest2 -e
+
+sudo useradd guest3 -c "convidado convidado" -s /bin/bash -m -p $(openssl passwd -crypt Senha123)
+passwd guest3 -e
+
+sudo useradd guest4 -c "convidado convidado" -s /bin/bash -m -p $(openssl passwd -crypt Senha123)
+passwd guest4 -e
+
+echo"finished!!"
+#########################################################################################################################################################################
