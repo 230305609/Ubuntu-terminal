@@ -1,5 +1,10 @@
+#creating a user
 useradd convidado1 -c "convidado especial" -s /bin/bash -m -p $(openssl passwd -crypt Senha123)
 
 if you are not a super user
 
 sudo useradd convidado1 -c "convidado especial" -s /bin/bash -m -p $(openssl passwd -crypt Senha123)
+
+
+#delete users
+sudo userdel -r -f diego
