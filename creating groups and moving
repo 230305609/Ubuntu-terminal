@@ -1,0 +1,14 @@
+#created a group
+groupadd GRP_ADM
+
+#delete a group
+groupde1 GRP_ADM
+
+#add someone to the group
+useradd Diego -c "Diego Q.B" -m -s /bin/bash -p $(openssl passwd -crypt senha123) -G GRP_BIOINFO
+
+#add a user to a group but remove from others
+usermod -G GRP_BIOINFO User123
+
+#remove user from a group
+gpasswd -d User123 GRP_BIOINFO
