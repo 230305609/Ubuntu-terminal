@@ -13,5 +13,7 @@ usermod -G GRP_BIOINFO User123
 #remove user from a group
 gpasswd -d User123 GRP_BIOINFO
 
-#change group owner
+#change group owner(You can only make this change with root or sudo user)
 chown User567:GRP_BIOINFO /bioinfo/
+or
+sudo chown User567:GRP_BIOINFO /bioinfo/
