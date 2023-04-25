@@ -1,0 +1,26 @@
+#releasing remote access
+sudo nano /etc/ssh/sshd_config
+###########sudo nano /etc/ssh/sshd_config################################################################################################################################
+#PermitRootLogin prohibit-password -------------------------------------> PermitRootLogin yes
+                                   replace the old one with the new one
+                                   substitua o antigo pelo novo
+and finally save and rebot/por ultimo salve e reinicie
+33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+sudo systemctl restart sshd
+
+#creating password for hoot
+sudo passwd root
+[sudo] password for vaqb:
+New password:
+Retype new password:
+passwd: password updated successfully
+
+#switch to root and switch to user
+su
+Password:
+su user123
+
+#sudo group
+cat /ect/group
+
+                                   
