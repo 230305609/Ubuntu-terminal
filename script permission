@@ -1,0 +1,18 @@
+#script permission/using root user
+nano date.sh
+ls -l
+-rw-r--r-- l root root 53 jun 21 19:49 date.sh
+chmod 744 date.sh
+ls -l
+-rwxr--r-- l root root 53 jun 21 19:49 date.sh
+chmod 644 date.h
+ls -l
+-rw-r--r-- l root root 53 jun 21 19:49 date.sh
+
+#script permission only for the owner
+chmod +x date.sh
+ls -l
+-rwxr-xr-- l root root 53 jun 21 19:49 date.sh
+chmod -x date.sh
+ls -l
+-rw-r--r-- l root root 53 jun 21 19:49 date.sh
