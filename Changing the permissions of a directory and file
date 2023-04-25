@@ -1,3 +1,4 @@
+#as root user
 execute =1
 write =2
 read =4
@@ -13,7 +14,7 @@ chmod 750 /bioinfo/
 nano texto-bioinfo.txt
 ls -l
 -rw-r--r-- l root   rooot 60 jun 21 18:18 texto-bioinfo.txt
-sudo chown root:GRP_BIOINFO texto-bioinfo.txt
+chown root:GRP_BIOINFO texto-bioinfo.txt
 ls -l
 -rw-r--r-- l root   GRP_BIOINFO 60 jun 21 19:1o texto-bioinfo.txt
 chmod 750 texto-bioinfo.txt
