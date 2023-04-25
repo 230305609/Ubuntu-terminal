@@ -12,3 +12,6 @@ usermod -G GRP_BIOINFO User123
 
 #remove user from a group
 gpasswd -d User123 GRP_BIOINFO
+
+#change group owner
+chown User567:GRP_BIOINFO /bioinfo/
